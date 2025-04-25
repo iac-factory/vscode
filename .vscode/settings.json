@@ -1,0 +1,57 @@
+{
+	// If this setting is false, no telemetry will be sent regardless of the new setting's value. Deprecated due to being combined into the `telemetry.telemetryLevel` setting.
+	// Enable crash reports to be collected. This helps us improve stability. 
+	// This option requires restart to take effect.
+	"telemetry.enableCrashReporter": false,
+	// If this setting is false, no telemetry will be sent regardless of the new setting's value. Deprecated in favor of the `telemetry.telemetryLevel` setting.
+	// Enable diagnostic data to be collected. This helps us to better understand how Visual Studio Code is performing and where improvements need to be made. [Read more](https://go.microsoft.com/fwlink/?LinkId=521839) about what we collect and our privacy statement.
+	"telemetry.enableTelemetry": false,
+	// Enable feedback mechanisms such as the issue reporter, surveys, and feedback options in features like Copilot Chat.
+	"telemetry.feedback.enabled": false,
+	// 
+	// Controls Visual Studio Code telemetry, first-party extension telemetry, and participating third-party extension telemetry. Some third party extensions might not respect this setting. Consult the specific extension's documentation to be sure. Telemetry helps us better understand how Visual Studio Code is performing, where improvements need to be made, and how features are being used. Read more about the [data we collect](https://aka.ms/vscode-telemetry) and our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839). A full restart of the application is necessary for crash reporting changes to take effect.
+	// 
+	// &nbsp;
+	// 
+	// The following table outlines the data sent with each setting:
+	// 
+	// |       | Crash Reports | Error Telemetry | Usage Data |
+	// |:------|:-------------:|:---------------:|:----------:|
+	// | all   |       ✓       |        ✓        |     ✓      |
+	// | error |       ✓       |        ✓        |     -      |
+	// | crash |       ✓       |        -        |     -      |
+	// | off   |       -       |        -        |     -      |
+	// 
+	// 
+	// &nbsp;
+	// 
+	// ****Note:*** If this setting is 'off', no telemetry will be sent regardless of other telemetry settings. If this setting is set to anything except 'off' and telemetry is disabled with deprecated settings, no telemetry will be sent.*
+	// 
+	//  - all: Sends usage data, errors, and crash reports.
+	//  - error: Sends general error telemetry and crash reports.
+	//  - crash: Sends OS level crash reports.
+	//  - off: Disables all product telemetry.
+	"telemetry.telemetryLevel": "off",
+	// Controls whether the editor should automatically format the pasted content. A formatter must be available and the formatter should be able to format a range in a document.
+	"editor.formatOnPaste": false,
+	// Format a file on save. A formatter must be available and the editor must not be shutting down. When `files.autoSave` is set to `afterDelay`, the file will only be formatted when saved explicitly.
+	"editor.formatOnSave": false,
+	// Controls [auto save](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) of editors that have unsaved changes.
+	//  - off: An editor with changes is never automatically saved.
+	//  - afterDelay: An editor with changes is automatically saved after the configured `files.autoSaveDelay`.
+	//  - onFocusChange: An editor with changes is automatically saved when the editor loses focus.
+	//  - onWindowChange: An editor with changes is automatically saved when the window loses focus.
+	"files.autoSave": "off",
+	// Controls the delay in milliseconds after which an editor with unsaved changes is saved automatically. Only applies when `files.autoSave` is set to `afterDelay`.
+	"files.autoSaveDelay": 1000,
+	// Controls whether opening keybinding settings also opens an editor showing all default keybindings.
+	"workbench.settings.openDefaultKeybindings": true,
+	// Controls whether opening settings also opens an editor showing all default settings.
+	"workbench.settings.openDefaultSettings": true,
+	// Specifies the file icon theme used in the workbench or 'null' to not show any file icons.
+	"workbench.iconTheme": "vscode-jetbrains-icon-theme",
+	// Markdown settings.
+	"[markdown]": {
+		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+	}
+}
